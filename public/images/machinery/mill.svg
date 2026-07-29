@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Yardımcı freze teknik temsili</title><desc id="desc">Freze tablası, takım ve iş parçasını gösteren soyut teknik çizim.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111820"/><stop offset="1" stop-color="#2a3542"/></linearGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#d69a5a" stroke-opacity=".09"/></pattern></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect width="1200" height="800" fill="url(#grid)"/>
+  <path d="M494 124h210v258H494z" fill="#293642" stroke="#8f9aa5" stroke-opacity=".5" stroke-width="4"/><path d="M552 382h94v126h-94z" fill="#b87333"/><path d="M581 508v74" stroke="#d69a5a" stroke-width="10"/>
+  <path d="M228 588h744l-82 96H310z" fill="#28333e" stroke="#8d98a4" stroke-opacity=".5" stroke-width="4"/>
+  <path d="M348 510h498v98H348z" fill="#111820" stroke="#b87333" stroke-opacity=".7" stroke-width="3"/><path d="M410 536h374M410 560h374M410 584h374" stroke="#5c6875" stroke-width="5"/>
+  <path d="M268 708h662M268 697v22M930 697v22" stroke="#d69a5a" stroke-width="2"/>
+  <text x="104" y="104" fill="#d69a5a" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">YARDIMCI İŞLEME / REFERANS YÜZEYİ</text>
+</svg>

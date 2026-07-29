@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bağlama fikstürü teknik temsili">
+  <defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#0d1218"/><stop offset="1" stop-color="#293642"/></linearGradient><linearGradient id="m" x2="1" y2="1"><stop stop-color="#a7afb5"/><stop offset=".5" stop-color="#46525e"/><stop offset="1" stop-color="#7b858e"/></linearGradient></defs><rect width="1200" height="800" fill="url(#b)"/>
+  <path d="m260 570 78-342h544l68 342z" fill="url(#m)" stroke="#a8b0b7" stroke-opacity=".5" stroke-width="4"/>
+  <path d="M408 313h410v186H408z" fill="#202a34" stroke="#b87333" stroke-width="4"/><path d="M484 363h258v86H484z" fill="#0d131a"/>
+  <g fill="#172029" stroke="#d69a5a" stroke-width="3"><circle cx="349" cy="289" r="24"/><circle cx="864" cy="289" r="24"/><circle cx="310" cy="524" r="24"/><circle cx="902" cy="524" r="24"/></g>
+  <path d="M204 642h790" stroke="#d69a5a" stroke-width="2"/><text x="334" y="688" fill="#d69a5a" font-family="Arial" font-size="18" letter-spacing="4">BAĞLAMA / KONUMLANDIRMA / ERİŞİM</text>
+</svg>

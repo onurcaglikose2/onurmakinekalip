@@ -1,0 +1,23 @@
+import type { MetadataRoute } from "next";
+import { company } from "@/content/company";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: company.legalName,
+    short_name: company.shortName,
+    description:
+      "CNC işleme, torna, freze, büyük parça ve seri üretim çözümleri.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#0b0f14",
+    theme_color: "#0b0f14",
+    lang: "tr",
+    icons: [
+      {
+        src: "/icon.svg",
+        sizes: "any",
+        type: "image/svg+xml",
+      },
+    ],
+  };
+}

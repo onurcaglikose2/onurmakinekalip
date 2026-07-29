@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Tekrarlı metal bağlantı parçaları teknik temsili">
+  <defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#10151b"/><stop offset="1" stop-color="#2d3741"/></linearGradient><linearGradient id="g" x2="1" y2="1"><stop stop-color="#e0b168"/><stop offset=".35" stop-color="#7d4d22"/><stop offset=".65" stop-color="#c3823f"/><stop offset="1" stop-color="#f0c67e"/></linearGradient></defs><rect width="1200" height="800" fill="url(#b)"/>
+  <g fill="url(#g)" stroke="#f0c67e" stroke-opacity=".45" stroke-width="3">
+    <path d="M145 290h150l34 52v116l-34 52H145l-34-52V342z"/><path d="M373 290h150l34 52v116l-34 52H373l-34-52V342z"/><path d="M601 290h150l34 52v116l-34 52H601l-34-52V342z"/><path d="M829 290h150l34 52v116l-34 52H829l-34-52V342z"/>
+  </g><g fill="#131a21"><circle cx="220" cy="400" r="44"/><circle cx="448" cy="400" r="44"/><circle cx="676" cy="400" r="44"/><circle cx="904" cy="400" r="44"/></g>
+  <path d="M110 590h902" stroke="#d69a5a" stroke-width="2"/><text x="282" y="638" fill="#d69a5a" font-family="Arial" font-size="18" letter-spacing="4">TEKRAR / BAĞLANTI / YÜZEY HAZIRLIĞI</text>
+</svg>
