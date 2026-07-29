@@ -18,12 +18,69 @@ export type ProductionProject = {
   solution: string;
   result: string;
   images: string[];
+  imageAlt: string;
   featured: boolean;
   visual: "plate" | "body" | "shaft" | "fixture" | "connector" | "sample";
 };
 
-// TEMP_IMAGE: Teknik SVG kompozisyonları gerçek üretim fotoğraflarıyla değiştirilecektir.
+// TEMP_IMAGE: SVG kullanan örnekler yeni üretim fotoğrafları geldikçe değiştirilecektir.
 export const projects: ProductionProject[] = [
+  {
+    slug: "cnc-islenmis-mil-aparat-takimi",
+    title: "CNC işlenmiş mil ve aparat takımı",
+    category: "torna",
+    material: "Çelik",
+    method: "CNC torna ve tamamlayıcı freze operasyonları",
+    productionType: "Takım / düşük adet",
+    scale: "Uzun parça",
+    problem:
+      "Kademeli çap, diş ve bağlantı geometrilerinin aynı parça üzerinde işlenmesi.",
+    solution:
+      "Torna operasyonları; bağlantı ve sabitleme bölgelerindeki tamamlayıcı işlemlerle birlikte planlandı.",
+    result: "Dört parçadan oluşan mil ve aparat takımı üretildi.",
+    images: ["/images/projects/project-machined-shafts.webp"],
+    imageAlt: "Siyah zeminde dört adet CNC işlenmiş uzun çelik mil ve aparat",
+    featured: true,
+    visual: "shaft",
+  },
+  {
+    slug: "seri-uretim-frezelenmis-aluminyum-parcalar",
+    title: "Seri üretim frezelenmiş parçalar",
+    category: "seri-uretim",
+    material: "Alüminyum",
+    method: "CNC freze, delik ve yüzey operasyonları",
+    productionType: "Seri üretim",
+    scale: "Küçük parça",
+    problem: "Aynı geometrinin çoklu parçalarda tekrarlı biçimde hazırlanması.",
+    solution:
+      "Referans yüzeyler, delik bölgeleri ve operasyon sırası parti boyunca aynı akışta takip edildi.",
+    result:
+      "İşlenmiş yüzeyleri ve bağlantı bölgeleri hazırlanmış parça serisi elde edildi.",
+    images: ["/images/projects/project-series-milled-parts.webp"],
+    imageAlt:
+      "Siyah zeminde sıralanmış CNC frezelenmiş küçük alüminyum parçalar",
+    featured: true,
+    visual: "fixture",
+  },
+  {
+    slug: "dairesel-baglanti-plakalari",
+    title: "Dairesel bağlantı plakaları",
+    category: "hassas-parca",
+    material: "İşlenmiş metal",
+    method: "CNC torna, kanal ve delik operasyonları",
+    productionType: "Takım / düşük adet",
+    scale: "Orta ve küçük parça",
+    problem:
+      "Dairesel yüzey, merkez çapı ve bağlantı kanallarının aynı parçada ilişkilendirilmesi.",
+    solution:
+      "Torna ile oluşturulan yüzeylere kanal ve delik operasyonları tamamlayıcı sırada uygulandı.",
+    result: "Farklı çaplarda üç bağlantı plakası hazırlandı.",
+    images: ["/images/projects/project-circular-plates.webp"],
+    imageAlt:
+      "Siyah zeminde farklı çaplarda üç CNC işlenmiş dairesel bağlantı plakası",
+    featured: true,
+    visual: "plate",
+  },
   {
     slug: "buyuk-aluminyum-makine-plakasi",
     title: "Büyük alüminyum makine plakası",
@@ -39,6 +96,7 @@ export const projects: ProductionProject[] = [
     result:
       "Montaja hazır bağlantı yüzeyleri ve kontrol edilebilir kritik bölgeler elde edildi.",
     images: ["/images/projects/plate.svg"],
+    imageAlt: "Büyük alüminyum makine plakasını gösteren teknik illüstrasyon",
     featured: true,
     visual: "plate",
   },
@@ -57,6 +115,7 @@ export const projects: ProductionProject[] = [
     result:
       "Montaj ilişkisi gözetilen, sonraki işlemlere hazır bir bağlantı gövdesi üretildi.",
     images: ["/images/projects/body.svg"],
+    imageAlt: "Çelik bağlantı gövdesini gösteren teknik illüstrasyon",
     featured: true,
     visual: "body",
   },
@@ -75,6 +134,7 @@ export const projects: ProductionProject[] = [
     result:
       "Birbiriyle eşleşmesi kontrol edilmiş tamamlayıcı parça takımı hazırlandı.",
     images: ["/images/projects/shaft.svg"],
+    imageAlt: "Mil ve burç takımını gösteren teknik illüstrasyon",
     featured: false,
     visual: "shaft",
   },
@@ -93,6 +153,7 @@ export const projects: ProductionProject[] = [
     result:
       "İlgili operasyona özel, erişilebilir bağlama bölgelerine sahip fikstür bileşeni üretildi.",
     images: ["/images/projects/fixture.svg"],
+    imageAlt: "Bağlama fikstürü parçasını gösteren teknik illüstrasyon",
     featured: true,
     visual: "fixture",
   },
@@ -111,6 +172,8 @@ export const projects: ProductionProject[] = [
     result:
       "Bağlantı ve yüzey işlemi öncesi hazırlığı izlenebilir tekrarlı parçalar üretildi.",
     images: ["/images/projects/connector.svg"],
+    imageAlt:
+      "Marpuç metal bağlantı bileşenlerini gösteren teknik illüstrasyon",
     featured: true,
     visual: "connector",
   },
@@ -129,6 +192,7 @@ export const projects: ProductionProject[] = [
     result:
       "Kontrol noktaları belirlenmiş yeni bir bakım parçası üretim akışına alındı.",
     images: ["/images/projects/sample.svg"],
+    imageAlt: "Numuneye göre bakım parçasını gösteren teknik illüstrasyon",
     featured: false,
     visual: "sample",
   },

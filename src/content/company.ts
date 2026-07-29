@@ -29,17 +29,18 @@ export type CompanyInfo = {
 
 /**
  * YAYIN ÖNCESİ NOTU:
- * Telefon, WhatsApp, adres, kuruluş yılı ve deneyim süresi varsayımsaldır.
+ * Adres bilgisi yayın öncesinde doğrulanmalıdır.
  * Gerçek şirket bilgileri geldiğinde yalnızca bu dosya güncellenmelidir.
  */
+const contactPhone = "0531 957 30 50";
+
 export const company: CompanyInfo = {
   legalName: "Onur Makine Kalıp",
   shortName: "Onur Makine",
   domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.onurmakinekalip.com",
-  foundedYear: 2012,
-  experienceYears: "15+",
-  phone: "+90 555 000 00 00",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "+90 555 000 00 00",
+  experienceYears: "10",
+  phone: contactPhone,
+  whatsapp: contactPhone,
   email: "info@onurmakinekalip.com",
   quoteEmail: "teklif@onurmakinekalip.com",
   address: "İkitelli Organize Sanayi Bölgesi",

@@ -34,11 +34,11 @@ Sadece taslak, wireframe veya örnek ekran üretme. Çalışan, responsive, eri�
 
 Şirket küçük ve çevik bir talaşlı imalat işletmesidir.
 
-- 3 adet CNC işleme merkezi bulunmaktadır.
-- CNC tezgâhlarından biri büyük ölçülü parçalar için kullanılmaktadır.
-- Diğer 2 CNC, küçük ve hassas parçalar ile tekrarlı seri üretimlerde kullanılmaktadır.
-- Küçük CNC’lerde önemli ölçüde nargile marpuçu metal bileşenleri üretilmektedir.
-- 2 adet yardımcı torna/freze tezgâhı bulunmaktadır.
+- 1 adet 1300 × 700 mm dik işleme merkezi bulunmaktadır.
+- 2 adet CNC torna bulunmaktadır.
+- 1 adet manuel torna bulunmaktadır.
+- 1 adet kalıpçı frezesi bulunmaktadır.
+- CNC tornalarda tekrarlı dönel metal bileşenlerin seri üretimi yapılabilmektedir.
 - Teknik resme, numuneye veya ihtiyaca göre özel üretim yapılabilmektedir.
 - Tek parça, prototip, düşük adet ve seri üretim taleplerine hizmet verilebilmektedir.
 - Büyük CNC ile sanayi işletmelerinin ihtiyaç duyduğu büyük özel parçalar, makine elemanları, bakım parçaları, kalıp, aparat ve fikstür bileşenleri üretilebilmektedir.
@@ -135,8 +135,8 @@ Aşağıdaki bilgileri şimdilik varsayım olarak kullan. Tümünü `src/content
 - Hizmet bölgesi: İstanbul, Marmara Bölgesi ve Türkiye geneli
 - E-posta: [info@onurmakinekalip.com](mailto:info@onurmakinekalip.com)
 - Teklif e-postası: [teklif@onurmakinekalip.com](mailto:teklif@onurmakinekalip.com)
-- Telefon: +90 555 000 00 00
-- WhatsApp: +90 555 000 00 00
+- Telefon: 0531 957 30 50
+- WhatsApp: 0531 957 30 50
 - Çalışma saatleri: Pazartesi–Cumartesi 08.00–18.00
 - Teklif geri dönüş hedefi: Aynı iş günü içinde ön değerlendirme
 - Üretim tipi: Tek parça, prototip, düşük adet ve seri üretim
@@ -342,7 +342,7 @@ Ana başlık:
 
 Alt metin:
 
-> 3 CNC işleme merkezi ve 2 yardımcı torna/freze tezgâhımızla; teknik resme veya numuneye göre tek parçadan seri üretime kadar talaşlı imalat çözümleri sunuyoruz.
+> 1300 × 700 mm dik işleme merkezi, 2 CNC torna, manuel torna ve kalıpçı frezesiyle; teknik resme veya numuneye göre tek parçadan seri üretime kadar talaşlı imalat çözümleri sunuyoruz.
 
 Birincil CTA:
 
@@ -402,15 +402,15 @@ CTA:
 
 > Büyük Parça Kabiliyetini Gör
 
-### Hassas ve Tekrarlı Üretim
+### CNC Tornada Hassas ve Tekrarlı Üretim
 
 Başlık:
 
-> Küçük parçalarda ölçü ve tekrar tutarlılığı
+> Dönel parçalarda ölçü ve tekrar tutarlılığı
 
 Metin:
 
-> İki kompakt CNC işleme merkezimizle küçük, detaylı ve tekrarlı parçalar üretiyor; seri işlerde ölçü, yüzey ve bağlantı uyumunun korunmasına odaklanıyoruz.
+> İki CNC torna tezgâhımızla mil, burç, pim, adaptör ve tekrarlı dönel parçalar üretiyor; seri işlerde ölçü, yüzey ve bağlantı uyumunun korunmasına odaklanıyoruz.
 
 Maddeler:
 
@@ -450,15 +450,15 @@ Genel ifadeler yerine üretim sonucunu anlat.
 
 ## 10.5 Makine parkuru ön izlemesi
 
-Üç CNC ve iki yardımcı tezgâh için kartlar oluştur.
+Beş tezgâh için kartlar oluştur.
 
 Geçici makine adları:
 
-- CNC-01 — Büyük Kapasiteli Dik İşleme Merkezi
-- CNC-02 — Hassas ve Seri Üretim CNC Merkezi
-- CNC-03 — Hassas ve Seri Üretim CNC Merkezi
-- TM-01 — Torna Tezgâhı
-- FM-01 — Freze / Yardımcı İşleme Tezgâhı
+- DİM-01 — 1300 × 700 mm Dik İşleme Merkezi
+- CT-01 — CNC Torna
+- CT-02 — CNC Torna
+- MT-01 — Manuel Torna
+- KF-01 — Kalıpçı Frezesi
 
 Her kartta:
 
@@ -807,11 +807,11 @@ Her makine için detaylı kart veya bölüm oluştur:
 
 Gerçek değerler bilinmediği için veri yapısında `null` olarak tutulabilir. Kullanıcı arayüzünde boş veya “TBD” yazan teknik tablo gösterme. Veri girilmemiş alanları otomatik gizle.
 
-## CNC-01
+## DİM-01
 
 Başlık:
 
-> Büyük Kapasiteli CNC İşleme Merkezi
+> 1300 × 700 mm Dik İşleme Merkezi
 
 Kullanım:
 
@@ -821,39 +821,39 @@ Kullanım:
 - Özel sanayi parçaları
 - Tek parça ve düşük adet üretim
 
-## CNC-02
+## CT-01
 
 Başlık:
 
-> Hassas ve Seri Üretim CNC Merkezi
+> CNC Torna
 
 Kullanım:
 
-- Küçük ve hassas parçalar
-- Metal bağlantı parçaları
+- Mil ve pimler
+- Burçlar
 - Adaptörler
-- Marpuç bileşenleri
-- Tekrarlı seri üretim
+- Dişli bağlantı parçaları
+- Seri torna üretimi
 
-## CNC-03
+## CT-02
 
 Başlık:
 
-> Hassas ve Seri Üretim CNC Merkezi
+> CNC Torna
 
 Kullanım:
 
-- Küçük parça üretimi
+- Tekrarlı dönel parça üretimi
 - Seri üretim desteği
 - İkinci operasyonlar
 - Kapasite dengeleme
-- Farklı tasarım ve ölçülerde üretim
+- İç ve dış çap işlemleri
 
-## TM-01
+## MT-01
 
 Başlık:
 
-> Torna Tezgâhı
+> Manuel Torna
 
 Kullanım:
 
@@ -863,11 +863,11 @@ Kullanım:
 - Silindirik gövdeler
 - İç ve dış çap operasyonları
 
-## FM-01
+## KF-01
 
 Başlık:
 
-> Freze ve Yardımcı İşleme Tezgâhı
+> Kalıpçı Frezesi
 
 Kullanım:
 
@@ -1310,7 +1310,7 @@ Telefon bağlantıları `tel:` ile çalışmalı.
 
 WhatsApp bağlantısı örnek başlangıç mesajı içermelidir:
 
-> Merhaba, CNC üretimi için fiyat ve üretilebilirlik bilgisi almak istiyorum.
+> Merhaba size web siteniz üzerinden ulaşıyorum. CNC üretimi için fiyat ve üretilebilirlik bilgisi almak istiyorum.
 
 Analytics event önerileri:
 
@@ -1548,7 +1548,7 @@ Repo içine `CONTENT-SHOOT-GUIDE.md` dosyası ekle.
 - Her makinenin önden görünümü
 - Her makinenin 45 derece açıdan görünümü
 - Büyük CNC çalışırken video
-- Küçük CNC’de seri üretim
+- CNC tornada seri üretim
 - Torna operasyonu
 - Freze operasyonu
 - Kesici takımın parçaya temas ettiği yakın çekim
@@ -1612,7 +1612,6 @@ bulunmalıdır.
 NEXT_PUBLIC_SITE_URL=https://www.onurmakinekalip.com
 NEXT_PUBLIC_GA_ID=
 NEXT_PUBLIC_GOOGLE_MAPS_URL=
-NEXT_PUBLIC_WHATSAPP_NUMBER=
 
 RESEND_API_KEY=
 QUOTE_NOTIFICATION_EMAIL=teklif@onurmakinekalip.com
@@ -1768,7 +1767,7 @@ Mobilde:
 
 ## Hassas üretim mesajı
 
-> Küçük CNC tezgâhlarımızda ölçü tekrarı, bağlantı uyumu ve yüzey kalitesi gerektiren hassas parçalar üretiyoruz.
+> CNC torna tezgâhlarımızda ölçü tekrarı, bağlantı uyumu ve yüzey kalitesi gerektiren dönel parçalar üretiyoruz.
 
 ## Teklif mesajı
 
@@ -1791,7 +1790,7 @@ Proje tamamlanmış sayılmak için:
 1. Bütün sayfalar çalışıyor olmalıdır.
 2. Site mobil ve masaüstünde profesyonel görünmelidir.
 3. Ana sayfa ilk 10 saniyede şirketin ne yaptığını açıklamalıdır.
-4. Büyük CNC ve küçük CNC kabiliyeti açıkça ayrılmalıdır.
+4. Dik işleme ve CNC torna kabiliyeti açıkça ayrılmalıdır.
 5. Marpuç üretimi seri üretim tecrübesi olarak doğru konumlandırılmalıdır.
 6. Makine parkuru teknik ve güvenilir görünmelidir.
 7. Teklif formu validasyon, güvenlik ve başarılı gönderim akışına sahip olmalıdır.

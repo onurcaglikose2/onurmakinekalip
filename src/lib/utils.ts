@@ -15,10 +15,16 @@ export function toPhoneUrl(phone?: string) {
 }
 
 export function toWhatsAppUrl(phone?: string, message?: string) {
-  const number = digitsOnly(phone);
+  const digits = digitsOnly(phone);
+  const number =
+    digits.length === 11 && digits.startsWith("0")
+      ? `90${digits.slice(1)}`
+      : digits.length === 10
+        ? `90${digits}`
+        : digits;
   const text =
     message ??
-    "Merhaba, CNC üretimi için fiyat ve üretilebilirlik bilgisi almak istiyorum.";
+    "Merhaba size web siteniz üzerinden ulaşıyorum. CNC üretimi için fiyat ve üretilebilirlik bilgisi almak istiyorum.";
   return number
     ? `https://wa.me/${number}?text=${encodeURIComponent(text)}`
     : "#";

@@ -14,15 +14,15 @@ export function AboutFaq() {
                 <span aria-hidden="true" />
                 Onur Makine Kalıp
               </p>
-              <h2>Çevik yapı. Doğrudan teknik iletişim.</h2>
+              <h2>Mühendislik bakışı. Sahada karşılığı olan üretim.</h2>
             </div>
             <div>
               <p>
-                Onur Makine Kalıp, talaşlı imalat tecrübesini modern CNC işleme
-                kabiliyetiyle birleştiren çevik bir üretim işletmesidir. Küçük
-                yapımız sayesinde talepleri hızlı değerlendirir,
-                müşterilerimizin doğrudan üretim ekibiyle iletişim kurmasını
-                sağlar ve her projeyi ihtiyacına göre ele alırız.
+                İTÜ Gemi İnşa Mühendisliği mezunu Onur Çağlıköse tarafından
+                kurulan Onur Makine Kalıp, 10 yıllık talaşlı imalat deneyimini
+                CNC freze ve torna kabiliyetiyle birleştirir. Prototipten seri
+                üretime kadar her projeyi mühendislik hassasiyeti, kalite ve
+                zamanında teslimat odağıyla ele alırız.
               </p>
               <Link href="/hakkimizda">
                 Onur Makine’yi Tanıyın

@@ -82,7 +82,7 @@ export const sectors: Sector[] = [
     name: "Genel sanayi",
     need: "Tek seferlik bakım işinden düzenli parça ihtiyacına uzanan talepler",
     solution:
-      "Büyük ve küçük CNC kapasitesini ihtiyaca göre eşleştiren esnek üretim",
+      "Dik işleme ve CNC torna kapasitesini ihtiyaca göre eşleştiren esnek üretim",
     parts: ["Yedek parça", "Plaka", "Gövde", "Adaptör"],
     capabilities: ["Büyük parça CNC", "Hassas freze", "Torna"],
   },

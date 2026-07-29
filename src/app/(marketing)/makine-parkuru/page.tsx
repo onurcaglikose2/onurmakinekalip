@@ -10,7 +10,7 @@ import { createMetadata } from "@/lib/seo/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Makine Parkuru",
   description:
-    "3 CNC işleme merkezi ve 2 yardımcı torna/freze tezgâhıyla büyük parça, hassas parça ve seri üretim altyapımızı inceleyin.",
+    "1 adet 1300 × 700 mm dik işleme merkezi, 2 CNC torna, manuel torna ve kalıpçı frezesiyle üretim altyapımızı inceleyin.",
   path: "/makine-parkuru",
   keywords: [
     "CNC makine parkuru",
@@ -26,33 +26,33 @@ export default function MachineryPage() {
       <PageHero
         eyebrow="Makine parkuru"
         title="Her tezgâhın görevi net, kapasite kullanımı esnek"
-        description="Büyük işleme alanı gerektiren özel parçaları ayrı; küçük, detaylı ve tekrarlı parçaları ayrı üretim düzeninde ele alıyoruz."
+        description="Dik işleme, CNC torna, manuel torna ve kalıpçı freze operasyonlarını parçanın geometrisine ve üretim adedine göre planlıyoruz."
         current="Makine Parkuru"
         index="02"
         sideTitle="Üretim altyapısı"
         sideItems={[
-          "3 CNC işleme merkezi",
-          "1 yardımcı torna",
-          "1 yardımcı freze",
+          "1 adet 1300 × 700 mm dik işleme merkezi",
+          "2 adet CNC torna",
+          "1 manuel torna · 1 kalıpçı frezesi",
         ]}
       />
       <section className="machine-summary">
         <Container>
           <div>
-            <strong>3</strong>
-            <span>CNC merkezi</span>
+            <strong>1</strong>
+            <span>Dik işleme merkezi</span>
           </div>
           <p>
-            CNC-01 geniş işleme alanı gereken parçalar için; CNC-02 ve CNC-03
-            küçük, hassas ve tekrarlı parçalar için planlanır.
+            1300 × 700 mm dik işleme merkezi; plaka, gövde, kalıp, aparat ve
+            özel parça operasyonlarında kullanılır.
           </p>
           <div>
-            <strong>2</strong>
-            <span>Yardımcı tezgâh</span>
+            <strong>4</strong>
+            <span>Torna / freze tezgâhı</span>
           </div>
           <p>
-            Torna ve freze tezgâhları silindirik parçaları, ikinci
-            operasyonları, numune ve bakım işlerini destekler.
+            İki CNC torna, bir manuel torna ve bir kalıpçı frezesi; seri,
+            tamamlayıcı, numune ve bakım operasyonlarını destekler.
           </p>
         </Container>
       </section>

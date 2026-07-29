@@ -14,7 +14,7 @@ export function ProjectCard({
       <div className="project-card-image">
         <Image
           src={project.images[0]}
-          alt={`${project.title} için teknik görsel temsil`}
+          alt={project.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

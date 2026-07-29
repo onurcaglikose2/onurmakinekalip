@@ -57,7 +57,10 @@ test("üretim kabiliyetleri ve makine parkuru sayfaları açılıyor", async ({
 test("proje filtreleri çalışıyor", async ({ page }) => {
   await page.goto("/uretim-ornekleri");
   await page.getByRole("button", { name: /Torna/ }).click();
-  await expect(page.getByText("1 üretim örneği gösteriliyor")).toBeVisible();
+  await expect(page.getByText("2 üretim örneği gösteriliyor")).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: /CNC işlenmiş mil ve aparat takımı/ }),
+  ).toBeVisible();
   await expect(
     page.getByRole("button", { name: /Mil ve burç takımı/ }),
   ).toBeVisible();

@@ -17,12 +17,12 @@ export const faq = [
   {
     question: "Büyük ölçülü parçaları işleyebiliyor musunuz?",
     answer:
-      "Büyük kapasiteli CNC tezgâhımızla makine gövdesi, plaka, aparat, fikstür ve benzeri sanayi parçalarını proje bazında değerlendirebiliyoruz.",
+      "1300 × 700 mm dik işleme merkezimizle makine gövdesi, plaka, aparat, fikstür ve benzeri sanayi parçalarını proje bazında değerlendirebiliyoruz.",
   },
   {
     question: "Seri üretim yapıyor musunuz?",
     answer:
-      "Evet. İki kompakt CNC tezgâhımız küçük ve tekrarlı parçaların seri üretiminde kullanılmaktadır.",
+      "Evet. İki CNC tornamız tekrarlı dönel parçaların seri üretiminde; dik işleme merkezimiz ise uygun freze operasyonlarında kullanılmaktadır.",
   },
   {
     question: "Hangi malzemeleri işliyorsunuz?",

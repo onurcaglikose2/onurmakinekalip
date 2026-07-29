@@ -5,20 +5,19 @@ import { machinery } from "@/content/machinery";
 const items = [
   {
     value: String(
-      machinery.filter((machine) => machine.category.includes("cnc")).length,
+      machinery.filter((machine) => machine.category === "machining-center")
+        .length,
     ),
-    label: "CNC İşleme Merkezi",
-    detail: "Büyük + hassas üretim",
+    label: "Dik İşleme Merkezi",
+    detail: "1300 × 700 mm",
   },
   {
     value: String(
-      machinery.filter(
-        (machine) =>
-          machine.category === "lathe" || machine.category === "mill",
-      ).length,
+      machinery.filter((machine) => machine.category !== "machining-center")
+        .length,
     ),
     label: "Torna / Freze",
-    detail: "Yardımcı operasyon",
+    detail: "2 CNC + manuel + kalıpçı",
   },
   {
     value: company.experienceYears ?? "—",

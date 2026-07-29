@@ -17,20 +17,20 @@ Onur Makine Kalıp için hazırlanmış production odaklı kurumsal web sitesidi
 
 ## Sayfalar
 
-| URL                     | İçerik                                 |
-| ----------------------- | -------------------------------------- |
-| `/`                     | Ana satış sayfası                      |
-| `/uretim-kabiliyetleri` | 6 üretim kabiliyeti                    |
-| `/makine-parkuru`       | 3 CNC + 2 yardımcı tezgâh              |
-| `/uretim-ornekleri`     | Filtrelenebilir üretim galerisi        |
-| `/sektorler`            | 10 sektör ve tipik parça ihtiyaçları   |
-| `/kalite-ve-surec`      | 7 aşamalı üretim ve kontrol akışı      |
-| `/hakkimizda`           | Şirket yaklaşımı, kapasite ve değerler |
-| `/teklif-al`            | Teknik dosya yüklemeli teklif formu    |
-| `/iletisim`             | İletişim bilgileri ve kısa form        |
-| `/kvkk`                 | KVKK aydınlatma taslağı                |
-| `/gizlilik-politikasi`  | Gizlilik politikası taslağı            |
-| `/cerez-politikasi`     | Çerez politikası taslağı               |
+| URL                     | İçerik                                   |
+| ----------------------- | ---------------------------------------- |
+| `/`                     | Ana satış sayfası                        |
+| `/uretim-kabiliyetleri` | 6 üretim kabiliyeti                      |
+| `/makine-parkuru`       | 1 DİM + 2 CNC torna + manuel torna/freze |
+| `/uretim-ornekleri`     | Filtrelenebilir üretim galerisi          |
+| `/sektorler`            | 10 sektör ve tipik parça ihtiyaçları     |
+| `/kalite-ve-surec`      | 7 aşamalı üretim ve kontrol akışı        |
+| `/hakkimizda`           | Şirket yaklaşımı, kapasite ve değerler   |
+| `/teklif-al`            | Teknik dosya yüklemeli teklif formu      |
+| `/iletisim`             | İletişim bilgileri ve kısa form          |
+| `/kvkk`                 | KVKK aydınlatma taslağı                  |
+| `/gizlilik-politikasi`  | Gizlilik politikası taslağı              |
+| `/cerez-politikasi`     | Çerez politikası taslağı                 |
 
 Özel 404, runtime hata ekranı, `sitemap.xml`, `robots.txt`, manifest ve dinamik Open Graph görseli dahildir.
 
@@ -81,9 +81,10 @@ Makine marka/model, eksen, hareket mesafesi, tabla, maksimum parça ve kontrol �
 
 ## Yayın öncesi değiştirilmesi gereken varsayımlar
 
+Site genelindeki doğrulanmış telefon ve WhatsApp hattı: `0531 957 30 50`.
+
 `src/content/company.ts` içindeki aşağıdaki bilgiler geçici varsayımdır ve gerçek yayın öncesi doğrulanmalıdır:
 
-- Telefon ve WhatsApp: `+90 555 000 00 00`
 - Konum: `İkitelli Organize Sanayi Bölgesi, Başakşehir, İstanbul`
 - Kuruluş yılı: `2012`
 - Deneyim: `15+ yıl`
@@ -120,7 +121,6 @@ Tüm örnekler `.env.example` dosyasındadır.
 | `NEXT_PUBLIC_SITE_URL`           | Canonical site adresi                                    |
 | `NEXT_PUBLIC_GA_ID`              | GA4 ölçüm kimliği; yoksa script yüklenmez                |
 | `NEXT_PUBLIC_GOOGLE_MAPS_URL`    | Doğrulanmış yol tarifi bağlantısı                        |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER`    | Gelecekte şirket config’ini env ile geçersiz kılmak için |
 | `RESEND_API_KEY`                 | Teklif ve iletişim bildirim e-postaları                  |
 | `QUOTE_NOTIFICATION_EMAIL`       | Bildirim alıcısı                                         |
 | `QUOTE_UPLOAD_SIGNING_SECRET`    | Kısa ömürlü dosya planlarını imzalamak için sunucu sırrı |

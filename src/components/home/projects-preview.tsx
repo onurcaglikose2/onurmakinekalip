@@ -5,6 +5,10 @@ import { ProjectCard } from "@/components/projects/project-card";
 import { projects } from "@/content/projects";
 
 export function ProjectsPreview() {
+  const featuredProjects = projects
+    .filter((project) => project.featured)
+    .slice(0, 6);
+
   return (
     <section className="projects-preview">
       <Container>
@@ -19,7 +23,7 @@ export function ProjectsPreview() {
           </ButtonLink>
         </div>
         <div className="projects-grid">
-          {projects.map((project) => (
+          {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>

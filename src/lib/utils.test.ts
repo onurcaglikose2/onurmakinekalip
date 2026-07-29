@@ -11,6 +11,14 @@ describe("iletişim URL yardımcıları", () => {
     expect(url).toBe("https://wa.me/905551234567?text=Merhaba%20d%C3%BCnya");
   });
 
+  it("yerel WhatsApp numarasını ve web sitesi başlangıç mesajını hazırlar", () => {
+    const message =
+      "Merhaba size web siteniz üzerinden ulaşıyorum. CNC üretimi için fiyat ve üretilebilirlik bilgisi almak istiyorum.";
+    expect(toWhatsAppUrl("0531 957 30 50")).toBe(
+      `https://wa.me/905319573050?text=${encodeURIComponent(message)}`,
+    );
+  });
+
   it("e-posta konu satırını kodlar", () => {
     expect(toMailUrl("info@example.com", "Teklif talebi")).toContain(
       "subject=Teklif%20talebi",

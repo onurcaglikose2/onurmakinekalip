@@ -11,8 +11,8 @@ export function MachineryPreview() {
         <div className="machinery-preview-head">
           <SectionHeading
             eyebrow="Makine parkuru"
-            title="Büyük parçaya alan, seri parçaya ritim"
-            description="Üç CNC merkezi ile iki yardımcı tezgâh, farklı ölçekteki işleri aynı üretim çatısı altında değerlendirmemizi sağlar."
+            title="Dik işlemede alan, tornada üretim esnekliği"
+            description="1300 × 700 mm dik işleme merkezi, iki CNC torna, manuel torna ve kalıpçı frezesi farklı geometrileri aynı üretim çatısı altında işlememizi sağlar."
             tone="light"
           />
           <ButtonLink href="/makine-parkuru" variant="secondary" arrow>

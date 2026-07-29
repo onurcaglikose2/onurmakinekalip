@@ -39,9 +39,9 @@ export function Hero() {
             Küçük Parçada <em>Hassasiyet.</em>
           </h1>
           <p className="hero-description">
-            3 CNC işleme merkezi ve 2 yardımcı torna/freze tezgâhımızla; teknik
-            resme veya numuneye göre tek parçadan seri üretime kadar talaşlı
-            imalat çözümleri sunuyoruz.
+            1300 × 700 mm dik işleme merkezi, 2 CNC torna, manuel torna ve
+            kalıpçı frezesiyle; teknik resme veya numuneye göre tek parçadan
+            seri üretime kadar talaşlı imalat çözümleri sunuyoruz.
           </p>
           <Reveal className="hero-actions" delay={0.1}>
             <ButtonLink href="/teklif-al" variant="primary" arrow>

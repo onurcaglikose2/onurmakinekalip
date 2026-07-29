@@ -7,7 +7,7 @@ const panels = [
     code: "L / 01",
     title: "Büyük parçalar için güçlü CNC kapasitesi",
     description:
-      "Büyük işleme alanına sahip CNC tezgâhımızla makine parçaları, kalıp bileşenleri, aparatlar, fikstürler, plakalar, gövdeler ve özel sanayi parçaları üretiyoruz.",
+      "1300 × 700 mm dik işleme merkezimizle makine parçaları, kalıp bileşenleri, aparatlar, fikstürler, plakalar, gövdeler ve özel sanayi parçaları üretiyoruz.",
     items: [
       "Büyük ölçülü parça işleme",
       "Tek parça ve düşük adet üretim",
@@ -21,18 +21,18 @@ const panels = [
   },
   {
     code: "S / 02",
-    title: "Küçük parçalarda ölçü ve tekrar tutarlılığı",
+    title: "Dönel parçalarda ölçü ve tekrar tutarlılığı",
     description:
-      "İki kompakt CNC işleme merkezimizle küçük, detaylı ve tekrarlı parçalar üretiyor; seri işlerde ölçü, yüzey ve bağlantı uyumunun korunmasına odaklanıyoruz.",
+      "İki CNC torna tezgâhımızla mil, burç, pim, adaptör ve tekrarlı dönel parçalar üretiyor; seri işlerde ölçü, yüzey ve bağlantı uyumunun korunmasına odaklanıyoruz.",
     items: [
-      "Küçük hassas parçalar",
+      "Mil, burç ve pimler",
       "Seri ve tekrarlı üretim",
-      "Marpuç ve metal aksesuar bileşenleri",
+      "İç ve dış çap operasyonları",
       "Bağlantı ve adaptör parçaları",
     ],
-    href: "/uretim-kabiliyetleri#hassas-freze",
-    link: "Hassas Üretimi İncele",
-    image: "/images/machinery/cnc-precision.svg",
+    href: "/uretim-kabiliyetleri#torna",
+    link: "Torna Kabiliyetini Gör",
+    image: "/images/machinery/lathe.svg",
     className: "scale-panel-precision",
   },
 ];

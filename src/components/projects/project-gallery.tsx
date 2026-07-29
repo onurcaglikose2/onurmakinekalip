@@ -101,7 +101,7 @@ export function ProjectGallery() {
             <div className="project-dialog-image">
               <Image
                 src={selected.images[0]}
-                alt={`${selected.title} için teknik görsel temsil`}
+                alt={selected.imageAlt}
                 fill
                 sizes="(max-width: 900px) 100vw, 50vw"
               />
