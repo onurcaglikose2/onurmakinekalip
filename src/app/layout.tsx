@@ -90,7 +90,7 @@ const localBusinessJsonLd = {
   address: {
     "@type": "PostalAddress",
     streetAddress: company.address,
-    addressLocality: company.city,
+    addressLocality: company.district,
     addressRegion: company.city,
     addressCountry: "TR",
   },

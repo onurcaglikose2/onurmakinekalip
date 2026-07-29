@@ -131,7 +131,7 @@ Aşağıdaki bilgileri şimdilik varsayım olarak kullan. Tümünü `src/content
 - Kısa ad: Onur Makine
 - Kuruluş yılı: 2012
 - Sektör tecrübesi: 15+ yıl
-- Konum: İstanbul, İkitelli Organize Sanayi Bölgesi
+- Konum: AYKOSAN Sanayi Sitesi 6'lı D Blok No:24 İOSB Başakşehir/İstanbul
 - Hizmet bölgesi: İstanbul, Marmara Bölgesi ve Türkiye geneli
 - E-posta: [info@onurmakinekalip.com](mailto:info@onurmakinekalip.com)
 - Teklif e-postası: [teklif@onurmakinekalip.com](mailto:teklif@onurmakinekalip.com)
@@ -1237,16 +1237,16 @@ Semantik HTML, FAQ, madde listeleri, teknik tablolar ve tutarlı şirket bilgile
 
 # 20. Yerel SEO
 
-- İstanbul ve İkitelli konumunu doğal biçimde kullan
+- İstanbul, Başakşehir, İkitelli ve AYKOSAN konumlarını doğal biçimde kullan
 - Footer ve iletişim sayfasında NAP tutarlılığı
 - Google Business Profile bağlantısı için alan
 - Yol tarifi CTA’sı
 - Yerel hizmet bölgeleri
 - Schema içinde hizmet alanı
 
-Gerçek adres gelmeden yanlış açık adres uydurma. Şimdilik yalnızca:
+Doğrulanmış açık adres:
 
-> İkitelli Organize Sanayi Bölgesi, İstanbul
+> AYKOSAN Sanayi Sitesi 6'lı D Blok No:24 İOSB Başakşehir/İstanbul
 
 bilgisini kullan.
 

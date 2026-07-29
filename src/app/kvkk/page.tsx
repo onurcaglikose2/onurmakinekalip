@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/legal/legal-page";
-import { company } from "@/content/company";
+import { company, companyFullAddress } from "@/content/company";
 import { createMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = createMetadata({
@@ -21,7 +21,7 @@ export default function KvkkPage() {
           title: "Veri sorumlusu",
           paragraphs: [
             `${company.legalName}, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında veri sorumlusu sıfatıyla; teklif, iletişim ve üretim değerlendirme süreçlerinde paylaştığınız kişisel verileri aşağıdaki esaslarla işler.`,
-            `Veri sorumlusuna ${company.email} e-posta adresi veya ${company.address}, ${company.city} adres bilgisi üzerinden ulaşabilirsiniz.`,
+            `Veri sorumlusuna ${company.email} e-posta adresi veya ${companyFullAddress} adres bilgisi üzerinden ulaşabilirsiniz.`,
           ],
         },
         {

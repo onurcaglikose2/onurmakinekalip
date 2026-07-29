@@ -2,7 +2,11 @@ import Link from "next/link";
 import { Clock3, Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "./logo";
 import { TrackedLink } from "./tracked-link";
-import { company, companyMessages } from "@/content/company";
+import {
+  company,
+  companyFullAddress,
+  companyMessages,
+} from "@/content/company";
 import {
   footerServices,
   legalNavigation,
@@ -11,10 +15,6 @@ import {
 import { toMailUrl, toPhoneUrl, toWhatsAppUrl } from "@/lib/utils";
 
 export function Footer() {
-  const address = [company.address, company.district, company.city]
-    .filter(Boolean)
-    .join(", ");
-
   return (
     <footer className="site-footer">
       <div className="footer-main">
@@ -22,7 +22,7 @@ export function Footer() {
           <Logo />
           <p>{companyMessages.shortDescription}</p>
           <div className="footer-coordinate" aria-hidden="true">
-            İKİTELLİ / İSTANBUL
+            AYKOSAN / İSTANBUL
           </div>
         </div>
         <div className="footer-column">
@@ -67,7 +67,7 @@ export function Footer() {
           </TrackedLink>
           <div>
             <MapPin size={17} aria-hidden="true" />
-            <span>{address}</span>
+            <span>{companyFullAddress}</span>
           </div>
           <div>
             <Clock3 size={17} aria-hidden="true" />
@@ -77,7 +77,7 @@ export function Footer() {
             className="footer-direction"
             href={
               process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL ||
-              `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+              `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyFullAddress)}`
             }
             target="_blank"
             rel="noreferrer"

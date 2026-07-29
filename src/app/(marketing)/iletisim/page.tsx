@@ -11,13 +11,13 @@ import { ContactForm } from "@/components/forms/contact-form";
 import { TrackedLink } from "@/components/layout/tracked-link";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
-import { company } from "@/content/company";
+import { company, companyFullAddress } from "@/content/company";
 import { toMailUrl, toPhoneUrl, toWhatsAppUrl } from "@/lib/utils";
 import { createMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "İletişim",
-  description: `${company.legalName} iletişim bilgileri. ${company.address}, ${company.city}; telefon, WhatsApp, e-posta ve çalışma saatleri.`,
+  description: `${company.legalName} iletişim bilgileri. ${companyFullAddress}; telefon, WhatsApp, e-posta ve çalışma saatleri.`,
   path: "/iletisim",
   keywords: [
     "Onur Makine iletişim",
@@ -27,12 +27,9 @@ export const metadata: Metadata = createMetadata({
 });
 
 export default function ContactPage() {
-  const address = [company.address, company.district, company.city]
-    .filter(Boolean)
-    .join(", ");
   const mapsUrl =
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL ||
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyFullAddress)}`;
 
   return (
     <>
@@ -90,14 +87,14 @@ export default function ContactPage() {
                 <div className="location-target">
                   <MapPin />
                 </div>
-                <span>İKİTELLİ / İSTANBUL</span>
+                <span>AYKOSAN / İSTANBUL</span>
               </div>
               <div className="location-details">
                 <p className="eyebrow">
                   <span aria-hidden="true" />
                   Atölye konumu
                 </p>
-                <h2>{address}</h2>
+                <h2>{companyFullAddress}</h2>
                 <p>
                   Atölye ziyareti ve parça teslimi için gelmeden önce telefonla
                   iletişime geçmenizi rica ederiz.

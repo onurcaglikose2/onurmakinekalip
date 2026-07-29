@@ -81,18 +81,20 @@ Makine marka/model, eksen, hareket mesafesi, tabla, maksimum parça ve kontrol �
 
 ## Yayın öncesi değiştirilmesi gereken varsayımlar
 
-Site genelindeki doğrulanmış telefon ve WhatsApp hattı: `0531 957 30 50`.
+Site genelindeki doğrulanmış iletişim bilgileri:
+
+- Telefon ve WhatsApp: `0531 957 30 50`
+- Açık adres: `AYKOSAN Sanayi Sitesi 6'lı D Blok No:24 İOSB Başakşehir/İstanbul`
 
 `src/content/company.ts` içindeki aşağıdaki bilgiler geçici varsayımdır ve gerçek yayın öncesi doğrulanmalıdır:
 
-- Konum: `İkitelli Organize Sanayi Bölgesi, Başakşehir, İstanbul`
 - Kuruluş yılı: `2012`
 - Deneyim: `15+ yıl`
 - Çalışma saatleri
 - Aynı iş günü ön değerlendirme hedefi
 - Genel ve teklif e-posta adreslerinin çalışan posta kutuları
 
-Gerçek açık adres gelmeden harita koordinatı tanımlanmamıştır. Koordinatlar `company.mapCoordinates` alanına eklendiğinde harita bileşeni ayrıca etkinleştirilebilir. Sertifika, makine ölçüsü, tolerans veya teslim süresi iddiası varsayımsal olarak eklenmemiştir.
+Harita koordinatı henüz tanımlanmamıştır; yol tarifi bağlantısı doğrulanmış açık adresi Google Maps’te aratır. Koordinatlar `company.mapCoordinates` alanına eklendiğinde harita bileşeni ayrıca etkinleştirilebilir. Sertifika, makine ölçüsü, tolerans veya teslim süresi iddiası varsayımsal olarak eklenmemiştir.
 
 KVKK, gizlilik ve çerez metinleri profesyonel başlangıç taslağıdır; gerçek veri akışı, hizmet sağlayıcılar ve şirket bilgileriyle birlikte yetkili hukuk danışmanı tarafından son kontrolden geçirilmelidir.
 
@@ -242,7 +244,8 @@ GA4 kurulumu:
 
 ## Production kontrol listesi
 
-- [ ] Telefon, WhatsApp, açık adres, kuruluş yılı ve deneyim bilgisi doğrulandı.
+- [x] Telefon, WhatsApp ve açık adres doğrulandı.
+- [ ] Kuruluş yılı ve deneyim bilgisi doğrulandı.
 - [ ] Makine marka/model ve gerçek teknik ölçüleri girildi.
 - [ ] Gerçek fotoğraflar optimize edilip teknik SVG’lerle değiştirildi.
 - [ ] KVKK/gizlilik/çerez metinleri hukuki kontrolden geçti.

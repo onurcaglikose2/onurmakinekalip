@@ -28,9 +28,7 @@ export type CompanyInfo = {
 };
 
 /**
- * YAYIN ÖNCESİ NOTU:
- * Adres bilgisi yayın öncesinde doğrulanmalıdır.
- * Gerçek şirket bilgileri geldiğinde yalnızca bu dosya güncellenmelidir.
+ * Şirket ve iletişim bilgileri bu dosyadan merkezi olarak yönetilir.
  */
 const contactPhone = "0531 957 30 50";
 
@@ -43,7 +41,7 @@ export const company: CompanyInfo = {
   whatsapp: contactPhone,
   email: "info@onurmakinekalip.com",
   quoteEmail: "teklif@onurmakinekalip.com",
-  address: "İkitelli Organize Sanayi Bölgesi",
+  address: "AYKOSAN Sanayi Sitesi 6'lı D Blok No:24 İOSB",
   district: "Başakşehir",
   city: "İstanbul",
   country: "Türkiye",
@@ -54,6 +52,13 @@ export const company: CompanyInfo = {
   productionTypes: ["Tek parça", "Prototip", "Düşük adet", "Seri üretim"],
   qualityApproach: "Proje gereksinimine göre ölçüm, ara kontrol ve son kontrol",
 };
+
+export const companyFullAddress = [
+  company.address,
+  [company.district, company.city].filter(Boolean).join("/"),
+]
+  .filter(Boolean)
+  .join(" ");
 
 export const companyMessages = {
   shortDescription:
