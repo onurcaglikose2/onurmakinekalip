@@ -88,13 +88,13 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Hakkımızda"
         title="Mühendislik bakışıyla şekillenen üretim gücü"
-        description="Onur Makine Kalıp, kurucusu Onur Çağlıköse’nin mühendislik altyapısını 10 yıllık talaşlı imalat deneyimiyle birleştirerek metal parçalarda güvenilir fason üretim çözümleri sunar."
+        description="Onur Makine Kalıp, kurucusu Onur Çağlıköse’nin mühendislik altyapısını 11 yıllık talaşlı imalat deneyimiyle birleştirerek metal parçalarda güvenilir fason üretim çözümleri sunar."
         current="Hakkımızda"
         index="06"
         sideTitle="Bizi tanımlayanlar"
         sideItems={[
           "Kurucu mühendis vizyonu",
-          "10 yıllık sektör deneyimi",
+          "11 yıllık sektör deneyimi",
           "CNC freze ve CNC torna",
         ]}
       />
@@ -142,7 +142,7 @@ export default function AboutPage() {
                 Onur Makine Kalıp’ı kurdu.
               </p>
               <p>
-                10 yıllık sektör deneyimi, üretilebilirlikten doğru proses
+                11 yıllık sektör deneyimi, üretilebilirlikten doğru proses
                 seçimine; ölçü hassasiyetinden verimli iş planlamasına uzanan
                 bütüncül bir yaklaşımı firma kültürünün merkezine taşıyor. Her
                 proje, yalnızca işlenecek bir parça olarak değil; işlevi,

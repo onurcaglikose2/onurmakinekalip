@@ -36,7 +36,7 @@ export const company: CompanyInfo = {
   legalName: "Onur Makine Kalıp",
   shortName: "Onur Makine",
   domain: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.onurmakinekalip.com",
-  experienceYears: "10",
+  experienceYears: "11",
   phone: contactPhone,
   whatsapp: contactPhone,
   email: "info@onurmakinekalip.com",

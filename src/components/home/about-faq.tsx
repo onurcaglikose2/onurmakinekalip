@@ -19,7 +19,7 @@ export function AboutFaq() {
             <div>
               <p>
                 İTÜ Gemi İnşa Mühendisliği mezunu Onur Çağlıköse tarafından
-                kurulan Onur Makine Kalıp, 10 yıllık talaşlı imalat deneyimini
+                kurulan Onur Makine Kalıp, 11 yıllık talaşlı imalat deneyimini
                 CNC freze ve torna kabiliyetiyle birleştirir. Prototipten seri
                 üretime kadar her projeyi mühendislik hassasiyeti, kalite ve
                 zamanında teslimat odağıyla ele alırız.
