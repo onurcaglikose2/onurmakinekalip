@@ -724,6 +724,28 @@ p {
   color: white;
 }
 
+/* Ajans imzası: müşteri markasından baskın olmamalı; footer'ın soluk tonunda
+   kalır, vurgu yalnızca hover'da artar. */
+.footer-credit {
+  flex-shrink: 0;
+}
+
+.footer-credit a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.footer-credit a img {
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.footer-credit a:hover img {
+  opacity: 1;
+}
+
 .whatsapp-float {
   position: fixed;
   right: 22px;

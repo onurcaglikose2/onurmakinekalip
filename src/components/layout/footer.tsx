@@ -98,6 +98,25 @@ export function Footer() {
             </Link>
           ))}
         </nav>
+        <p className="footer-credit">
+          Tasarım &amp; geliştirme:{" "}
+          <a
+            href="https://tuvalsoft.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="TuvalSoft web sitesi"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element -- 14px dekoratif statik SVG; next/image SVG için dangerouslyAllowSVG gerektirir */}
+            <img
+              src="/tuvalsoft-icon.svg"
+              alt=""
+              aria-hidden="true"
+              width={14}
+              height={14}
+            />
+            TuvalSoft
+          </a>
+        </p>
       </div>
     </footer>
   );
