@@ -101,7 +101,7 @@ export function Footer() {
         <p className="footer-credit">
           Tasarım &amp; geliştirme:{" "}
           <a
-            href="https://tuvalsoft.com"
+            href="https://tuvalsoft.com.tr"
             target="_blank"
             rel="noopener"
             aria-label="TuvalSoft web sitesi"
