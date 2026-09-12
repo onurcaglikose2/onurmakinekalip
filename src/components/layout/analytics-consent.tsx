@@ -7,6 +7,20 @@ import Link from "next/link";
 const consentKey = "omk-analytics-consent";
 type Consent = "accepted" | "rejected" | null;
 
+/**
+ * Çerez bandının görünürlük anahtarı.
+ *
+ * `false` iken bant hiç çıkmaz VE GA4 hiç yüklenmez -- daha önce "accepted"
+ * kaydetmiş ziyaretçide bile. Kayıtlı tercih silinmez; bayrak açılınca o
+ * ziyaretçiye tekrar sorulmaz.
+ *
+ * Açmak için tek satır yeter: `true` yap.
+ *
+ * Tip `boolean` olarak YAZILI: `const x = false` literal tipi üretir, o zaman
+ * TypeScript aşağıdaki bandı ve GA bloğunu erişilemez kod sayıp uyarır.
+ */
+const BANT_GORUNSUN: boolean = false;
+
 export function AnalyticsConsent() {
   const measurementId = process.env.NEXT_PUBLIC_GA_ID;
   const [consent, setConsent] = useState<Consent>(null);
@@ -20,7 +34,7 @@ export function AnalyticsConsent() {
     });
   }, []);
 
-  if (!measurementId || !ready) return null;
+  if (!BANT_GORUNSUN || !measurementId || !ready) return null;
 
   const decide = (value: Exclude<Consent, null>) => {
     window.localStorage.setItem(consentKey, value);
